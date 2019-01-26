@@ -1,0 +1,17 @@
+<head>
+    <style>
+        body{
+            background-image: url('https://www.suyongso.com/files/attach/images/115/242/786/015/10d4672110f57863418c21bf2b964539.jpg');
+    
+        }
+        </style>
+</head>
+<title>word Count</title>
+<h1>Word Count</h1>
+<a href="{% url 'about' %}">ABOUT</a>
+
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <button type="submit" class="save btn btn-default">submit</button>
+</form>
